@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile group: 'org.graalvm.sdk', name: 'graal-sdk', version: '20.1.0'
+    testImplementation 'junit:junit:4.13'
+}
+
+application {
+    mainClassName = 'ch.so.agi.graalvm.App'
+}
